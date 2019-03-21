@@ -1,0 +1,877 @@
+{
+    "i": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 2,
+        "text": "Coal supply regions",
+        "elements": [
+            "i1",
+            "i2"
+        ]
+    },
+    "j": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 2,
+        "text": "Consumption regions",
+        "elements": [
+            "j1",
+            "j2"
+        ]
+    },
+    "k": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 2,
+        "text": "Oil supply regions",
+        "elements": [
+            "k1",
+            "k2"
+        ]
+    },
+    "r": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 2,
+        "text": "Refineries",
+        "elements": [
+            "r1",
+            "r2"
+        ]
+    },
+    "c": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 3,
+        "text": "Increments for coal",
+        "elements": [
+            "L",
+            "M",
+            "H"
+        ]
+    },
+    "o": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 2,
+        "text": "Increments for oil",
+        "elements": [
+            "L",
+            "H"
+        ]
+    },
+    "p": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "*"
+        ],
+        "number_records": 3,
+        "text": "Energy products",
+        "elements": [
+            "Coal",
+            "Light",
+            "Heavy"
+        ]
+    },
+    "g": {
+        "type": "GamsSet",
+        "dimension": 1,
+        "domain": [
+            "p"
+        ],
+        "number_records": 2,
+        "text": "Grades of refined oil",
+        "elements": [
+            "Light",
+            "Heavy"
+        ]
+    },
+    "table1": {
+        "type": "GamsParameter",
+        "dimension": 3,
+        "domain": [
+            "i",
+            "c",
+            "*"
+        ],
+        "number_records": 24,
+        "text": "Resource requirements for production levels (p 257)",
+        "values": {
+            "domain": [
+                [
+                    "i1",
+                    "L",
+                    "cap"
+                ],
+                [
+                    "i1",
+                    "L",
+                    "c0"
+                ],
+                [
+                    "i1",
+                    "L",
+                    "newcap"
+                ],
+                [
+                    "i1",
+                    "L",
+                    "steel"
+                ],
+                [
+                    "i1",
+                    "M",
+                    "cap"
+                ],
+                [
+                    "i1",
+                    "M",
+                    "c0"
+                ],
+                [
+                    "i1",
+                    "M",
+                    "newcap"
+                ],
+                [
+                    "i1",
+                    "M",
+                    "steel"
+                ],
+                [
+                    "i1",
+                    "H",
+                    "cap"
+                ],
+                [
+                    "i1",
+                    "H",
+                    "c0"
+                ],
+                [
+                    "i1",
+                    "H",
+                    "newcap"
+                ],
+                [
+                    "i1",
+                    "H",
+                    "steel"
+                ],
+                [
+                    "i2",
+                    "L",
+                    "cap"
+                ],
+                [
+                    "i2",
+                    "L",
+                    "c0"
+                ],
+                [
+                    "i2",
+                    "L",
+                    "newcap"
+                ],
+                [
+                    "i2",
+                    "L",
+                    "steel"
+                ],
+                [
+                    "i2",
+                    "M",
+                    "cap"
+                ],
+                [
+                    "i2",
+                    "M",
+                    "c0"
+                ],
+                [
+                    "i2",
+                    "M",
+                    "newcap"
+                ],
+                [
+                    "i2",
+                    "M",
+                    "steel"
+                ],
+                [
+                    "i2",
+                    "H",
+                    "cap"
+                ],
+                [
+                    "i2",
+                    "H",
+                    "c0"
+                ],
+                [
+                    "i2",
+                    "H",
+                    "newcap"
+                ],
+                [
+                    "i2",
+                    "H",
+                    "steel"
+                ]
+            ],
+            "data": [
+                300.0,
+                5.0,
+                1.0,
+                1.0,
+                300.0,
+                6.0,
+                5.0,
+                2.0,
+                400.0,
+                8.0,
+                10.0,
+                3.0,
+                200.0,
+                4.0,
+                1.0,
+                1.0,
+                300.0,
+                5.0,
+                5.0,
+                4.0,
+                600.0,
+                7.0,
+                6.0,
+                5.0
+            ]
+        }
+    },
+    "table2": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "i",
+            "j"
+        ],
+        "number_records": 4,
+        "text": "Transport costs ($ per ton)",
+        "values": {
+            "domain": [
+                [
+                    "i1",
+                    "j1"
+                ],
+                [
+                    "i1",
+                    "j2"
+                ],
+                [
+                    "i2",
+                    "j1"
+                ],
+                [
+                    "i2",
+                    "j2"
+                ]
+            ],
+            "data": [
+                1.0,
+                2.5,
+                0.75,
+                2.75
+            ]
+        }
+    },
+    "table3": {
+        "type": "GamsParameter",
+        "dimension": 3,
+        "domain": [
+            "k",
+            "o",
+            "*"
+        ],
+        "number_records": 12,
+        "text": "Oil resource requirements",
+        "values": {
+            "domain": [
+                [
+                    "k1",
+                    "L",
+                    "cap"
+                ],
+                [
+                    "k1",
+                    "L",
+                    "c0"
+                ],
+                [
+                    "k1",
+                    "H",
+                    "cap"
+                ],
+                [
+                    "k1",
+                    "H",
+                    "c0"
+                ],
+                [
+                    "k1",
+                    "H",
+                    "newcap"
+                ],
+                [
+                    "k1",
+                    "H",
+                    "steel"
+                ],
+                [
+                    "k2",
+                    "L",
+                    "cap"
+                ],
+                [
+                    "k2",
+                    "L",
+                    "c0"
+                ],
+                [
+                    "k2",
+                    "H",
+                    "cap"
+                ],
+                [
+                    "k2",
+                    "H",
+                    "c0"
+                ],
+                [
+                    "k2",
+                    "H",
+                    "newcap"
+                ],
+                [
+                    "k2",
+                    "H",
+                    "steel"
+                ]
+            ],
+            "data": [
+                1100.0,
+                1.0,
+                1200.0,
+                1.5,
+                10.0,
+                4.0,
+                1300.0,
+                1.25,
+                1100.0,
+                1.5,
+                15.0,
+                2.0
+            ]
+        }
+    },
+    "table4": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "k",
+            "r"
+        ],
+        "number_records": 4,
+        "text": "Oil transport costs ($ per barrel)",
+        "values": {
+            "domain": [
+                [
+                    "k1",
+                    "r1"
+                ],
+                [
+                    "k1",
+                    "r2"
+                ],
+                [
+                    "k2",
+                    "r1"
+                ],
+                [
+                    "k2",
+                    "r2"
+                ]
+            ],
+            "data": [
+                2.0,
+                3.0,
+                4.0,
+                2.0
+            ]
+        }
+    },
+    "table5": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "*",
+            "r"
+        ],
+        "number_records": 6,
+        "text": "Refinery yields and cost",
+        "values": {
+            "domain": [
+                [
+                    "Light",
+                    "r1"
+                ],
+                [
+                    "Light",
+                    "r2"
+                ],
+                [
+                    "Heavy",
+                    "r1"
+                ],
+                [
+                    "Heavy",
+                    "r2"
+                ],
+                [
+                    "cost",
+                    "r1"
+                ],
+                [
+                    "cost",
+                    "r2"
+                ]
+            ],
+            "data": [
+                0.6,
+                0.5,
+                0.4,
+                0.5,
+                6.5,
+                5.0
+            ]
+        }
+    },
+    "table6": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "r",
+            "j"
+        ],
+        "number_records": 4,
+        "text": "Transport costs for refined products ($ per barrel)",
+        "values": {
+            "domain": [
+                [
+                    "r1",
+                    "j1"
+                ],
+                [
+                    "r1",
+                    "j2"
+                ],
+                [
+                    "r2",
+                    "j1"
+                ],
+                [
+                    "r2",
+                    "j2"
+                ]
+            ],
+            "data": [
+                1.0,
+                1.2,
+                1.0,
+                1.5
+            ]
+        }
+    },
+    "table7": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "p",
+            "*"
+        ],
+        "number_records": 15,
+        "text": "Elasticities of final demand",
+        "values": {
+            "domain": [
+                [
+                    "Coal",
+                    "Coal"
+                ],
+                [
+                    "Coal",
+                    "Light"
+                ],
+                [
+                    "Coal",
+                    "Heavy"
+                ],
+                [
+                    "Coal",
+                    "RefP"
+                ],
+                [
+                    "Coal",
+                    "RefQ"
+                ],
+                [
+                    "Light",
+                    "Coal"
+                ],
+                [
+                    "Light",
+                    "Light"
+                ],
+                [
+                    "Light",
+                    "Heavy"
+                ],
+                [
+                    "Light",
+                    "RefP"
+                ],
+                [
+                    "Light",
+                    "RefQ"
+                ],
+                [
+                    "Heavy",
+                    "Coal"
+                ],
+                [
+                    "Heavy",
+                    "Light"
+                ],
+                [
+                    "Heavy",
+                    "Heavy"
+                ],
+                [
+                    "Heavy",
+                    "RefP"
+                ],
+                [
+                    "Heavy",
+                    "RefQ"
+                ]
+            ],
+            "data": [
+                -0.75,
+                0.1,
+                0.2,
+                12.0,
+                1000.0,
+                0.1,
+                -0.5,
+                0.2,
+                16.0,
+                1200.0,
+                0.2,
+                0.1,
+                -0.5,
+                12.0,
+                1000.0
+            ]
+        }
+    },
+    "table8": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "p",
+            "j"
+        ],
+        "number_records": 6,
+        "text": "Demand without K or S constraints",
+        "values": {
+            "domain": [
+                [
+                    "Coal",
+                    "j1"
+                ],
+                [
+                    "Coal",
+                    "j2"
+                ],
+                [
+                    "Light",
+                    "j1"
+                ],
+                [
+                    "Light",
+                    "j2"
+                ],
+                [
+                    "Heavy",
+                    "j1"
+                ],
+                [
+                    "Heavy",
+                    "j2"
+                ]
+            ],
+            "data": [
+                1102.0,
+                998.0,
+                1252.0,
+                1266.0,
+                1041.0,
+                1055.0
+            ]
+        }
+    },
+    "table9": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "p",
+            "j"
+        ],
+        "number_records": 6,
+        "text": "Demand with  K or S constraints",
+        "values": {
+            "domain": [
+                [
+                    "Coal",
+                    "j1"
+                ],
+                [
+                    "Coal",
+                    "j2"
+                ],
+                [
+                    "Light",
+                    "j1"
+                ],
+                [
+                    "Light",
+                    "j2"
+                ],
+                [
+                    "Heavy",
+                    "j1"
+                ],
+                [
+                    "Heavy",
+                    "j2"
+                ]
+            ],
+            "data": [
+                996.0,
+                910.0,
+                1205.0,
+                1229.0,
+                996.0,
+                1020.0
+            ]
+        }
+    },
+    "pref": {
+        "type": "GamsParameter",
+        "dimension": 1,
+        "domain": [
+            "p"
+        ],
+        "number_records": 3,
+        "text": "Reference price",
+        "values": {
+            "domain": [
+                "Coal",
+                "Light",
+                "Heavy"
+            ],
+            "data": [
+                12.0,
+                16.0,
+                12.0
+            ]
+        }
+    },
+    "qref": {
+        "type": "GamsParameter",
+        "dimension": 1,
+        "domain": [
+            "p"
+        ],
+        "number_records": 3,
+        "text": "Reference demand",
+        "values": {
+            "domain": [
+                "Coal",
+                "Light",
+                "Heavy"
+            ],
+            "data": [
+                1000.0,
+                1200.0,
+                1000.0
+            ]
+        }
+    },
+    "epsilon": {
+        "type": "GamsParameter",
+        "dimension": 1,
+        "domain": [
+            "p"
+        ],
+        "number_records": 3,
+        "text": "Elasticity of demand (positive number)",
+        "values": {
+            "domain": [
+                "Coal",
+                "Light",
+                "Heavy"
+            ],
+            "data": [
+                0.75,
+                0.5,
+                0.5
+            ]
+        }
+    },
+    "d0": {
+        "type": "GamsParameter",
+        "dimension": 1,
+        "domain": [
+            "p"
+        ],
+        "number_records": 3,
+        "text": "Reference demand",
+        "values": {
+            "domain": [
+                "Coal",
+                "Light",
+                "Heavy"
+            ],
+            "data": [
+                1000.0,
+                1200.0,
+                1000.0
+            ]
+        }
+    },
+    "p0": {
+        "type": "GamsParameter",
+        "dimension": 1,
+        "domain": [
+            "p"
+        ],
+        "number_records": 3,
+        "text": "Reference price",
+        "values": {
+            "domain": [
+                "Coal",
+                "Light",
+                "Heavy"
+            ],
+            "data": [
+                12.0,
+                16.0,
+                12.0
+            ]
+        }
+    },
+    "sigma": {
+        "type": "GamsParameter",
+        "dimension": 2,
+        "domain": [
+            "p",
+            "pp"
+        ],
+        "number_records": 9,
+        "text": "Own- and cross-price elasticity matrix",
+        "values": {
+            "domain": [
+                [
+                    "Coal",
+                    "Coal"
+                ],
+                [
+                    "Coal",
+                    "Light"
+                ],
+                [
+                    "Coal",
+                    "Heavy"
+                ],
+                [
+                    "Light",
+                    "Coal"
+                ],
+                [
+                    "Light",
+                    "Light"
+                ],
+                [
+                    "Light",
+                    "Heavy"
+                ],
+                [
+                    "Heavy",
+                    "Coal"
+                ],
+                [
+                    "Heavy",
+                    "Light"
+                ],
+                [
+                    "Heavy",
+                    "Heavy"
+                ]
+            ],
+            "data": [
+                -0.75,
+                0.1,
+                0.2,
+                0.1,
+                -0.5,
+                0.2,
+                0.2,
+                0.1,
+                -0.5
+            ]
+        }
+    },
+    "savail": {
+        "type": "GamsParameter",
+        "dimension": 0,
+        "domain": [],
+        "number_records": 1,
+        "text": "Steel availability",
+        "values": 12000.0
+    },
+    "kavail": {
+        "type": "GamsParameter",
+        "dimension": 0,
+        "domain": [],
+        "number_records": 1,
+        "text": "Capital availability",
+        "values": 35000.0
+    }
+}
