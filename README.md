@@ -8,7 +8,6 @@ In order to run the gdx2json.py script the user will need to install the GAMS Py
 
 The solution between the GAMS model and the Julia/JuMP model has been verified to be the same.
 
-To run:
 
 # Requirements
 Python 3 (see .yml for exact environment), GAMS Python API, Julia 1.1.0 (JuMP, JSON, and Ipopt packages)
@@ -20,7 +19,7 @@ To recreate the original data GDX container and the JSON file that is used to po
 gams piesqcp.gms
 ```
 
-To simply run the Julia/JuMP model with the existing JSON file simply run
+To execute the Julia/JuMP model with the existing JSON file simply run
 ```
 julia piesqcp.jl
 ```
