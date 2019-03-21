@@ -6,6 +6,6 @@ The .gms file is provided for GAMS users and a translated version of the .gms fi
 
 The user will need to add the JuMP, JSON, and Ipopt packages to their Julia installation. It is assumed that the user has Julia 1.1.0.
 
-In order to run the gdx2json.py script the user will need to install the GAMS Python API... and may need to create a Python 3 environment with the following .yml file.  Conda was used as the Python package manager and is recommended to create this environment.  Information on how to import this environment is available here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment
+In order to run the gdx2json.py script the user will need to install the GAMS Python API (https://www.gams.com/latest/docs/API_PY_OVERVIEW.html)... and may need to create a Python 3 environment with the following .yml file.  Conda was used as the Python package manager and is recommended to create this environment.  Information on how to import this environment is available here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment
 
 The solution between the GAMS model and the Julia/JuMP model has been verified to be the same.
